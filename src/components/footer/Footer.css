@@ -1,0 +1,157 @@
+/* Main Footer Container */
+#Footer {
+    color: #02075D;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0%;
+    margin-bottom: 0px;
+    margin-top: 280px;
+}
+@media (max-width: 768px) {
+    #Footer {
+       margin-top: 80px;
+    }
+}
+
+/* Top Section */
+#FooterTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -10px;
+    padding: 0 8%;
+}
+
+@media (max-width: 768px) {
+    #FooterTop {
+       display: none;
+    }
+}
+#IconLeft img,
+#IconRight img {
+    width: 40px;
+    height: auto;
+}
+
+#FooterSocial {
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    gap: 80px;
+}
+
+/* Middle Section with Divider Lines */
+#FooterMid {
+    display: flex;
+    justify-content: space-between;
+
+}
+@media (max-width: 768px) {
+    #FooterSocial {
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+    }
+    
+     #LeftLine hr,
+     #RightLine hr{
+        display: none;
+     }
+}
+#LeftLine hr,
+#RightLine hr {
+    border: 1px solid #02075D;
+    width: 450px;
+
+}
+
+/* Bottom Section */
+#FooterCon {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding: 0 8%;
+}
+@media (max-width: 768px) {
+    #FooterCon {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+  
+}
+
+/* Footer Left Section */
+#FooterLeft {
+    display: flex;
+    flex-direction: column;
+}
+
+#Logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+#LogoCon {
+    font-size: 15px;
+    margin-top: -50px;
+}
+
+/* Footer Right Section */
+#FooterRight {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+}
+
+@media (max-width: 768px) {
+    #FooterRight {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+#Location,
+#Link,
+#Legal {
+    margin-top: 40px;
+}
+
+#LocationHead,
+#LinkHead,
+#LegalHead {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#LocationCon,
+#LinkCon,
+#LegalCon {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+#LinkCon a,
+#LegalCon a {
+    color: #02075D;
+    text-decoration: none;
+}
+
+#LinkCon a:hover,
+#LegalCon a:hover {
+    text-decoration: none;
+}
+
+#Copyright {
+    font-size: 15px;
+    margin-top: 250px;
+    color: #02075D;
+    text-align: center;
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+    #Copyright {
+       margin-top: 50px;
+    }
+}

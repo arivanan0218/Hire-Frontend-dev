@@ -1,0 +1,39 @@
+.hire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 8%;
+}
+
+.hireTopBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.hireHead {
+    color: #02075D;
+    text-align: center;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 90px;
+}
+
+.hireHead span {
+    background: linear-gradient(90deg, #B66FC1 41.23%, #6B46C6 89.69%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 90px;
+}
+
+.hireFilter,
+.hireAdd {
+    width: 50px;
+    height: auto;
+}

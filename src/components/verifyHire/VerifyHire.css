@@ -1,0 +1,158 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 5% 2% 5%;
+    width: 760px;
+    box-sizing: border-box;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.10);
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.otp-verification-title{
+    color: #02075D;
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.container .logo {
+    width: 369px;
+    height: auto;
+    flex-shrink: 0;
+}
+@media (max-width: 768px) {
+    .container .logo {
+        width: 200px;
+    }
+    .container{
+        width: 100%;
+    }
+}
+.otp-verification-description{
+    width: 380px;
+    color: #02075d77;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.otp-verification-input-title{
+    color: #02075D;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.container p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #02075D;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.form input {
+    padding: 10px 20px;
+    width: 380px;
+    height: 65px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid #02075D;
+    background-color: transparent;
+    font-family: Poppins;
+    opacity: 0.5;
+}
+
+.form input::placeholder {
+    color: #02075D;
+}
+
+.form select {
+    padding: 10px 20px 10px 10px;
+    width: 380px;
+    height: 65px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid #02075D;
+    background-color: #ffffff;
+    font-family: Poppins;
+    color: #02075D;
+    opacity: 0.5;
+    margin-bottom: 20px;
+    z-index: 10;
+    position: relative;
+}
+
+.form input:focus,
+.form select:focus {
+    border-color: #02075D;
+    /* Keep the border color the same on focus */
+    outline: none;
+    /* Ensure no visual change on focus */
+    background-color: #ffffff;
+    color: #02075D;
+}
+
+/* .container .instructions {
+    padding-top: 0;
+    width: 380px;
+} */
+
+/* .container .instructions p {
+    margin: 0;
+    text-align: left;
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: #ffffff;
+} */
+
+
+.container button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 380px;
+    height: 60px;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #B66FC1 0%, #6B46C6 100%);
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    font-family: Poppins;
+}
+
+.container a {
+    margin-top: 40px;
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+}

@@ -1,0 +1,253 @@
+.drive-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 5% 2% 5%;
+    width: 760px;
+    box-sizing: border-box;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.10);
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.drive-container .signin-logo {
+    width: 369px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.drive-container p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #02075D;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.drive-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.drive-form input {
+    padding: 10px 20px;
+    width: 380px;
+    height: 65px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid #02075D;
+    background-color: transparent;
+    font-family: Poppins;
+    opacity: 0.5;
+}
+
+.drive-form input::placeholder {
+    color: #02075D;
+}
+
+.drive-form select {
+    padding: 10px 20px 10px 10px;
+    width: 380px;
+    height: 65px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid #02075D;
+    background-color: #ffffff;
+    font-family: Poppins;
+    color: #02075D;
+    opacity: 0.5;
+    margin-bottom: 20px;
+    z-index: 10;
+    position: relative;
+}
+
+.drive-form input:focus,
+.drive-form select:focus {
+    border-color: #02075D;
+    /* Keep the border color the same on focus */
+    outline: none;
+    /* Ensure no visual change on focus */
+    background-color: #ffffff;
+    color: #02075D;
+}
+
+/* .drive-container .instructions {
+    padding-top: 0;
+    width: 380px;
+} */
+
+/* .drive-container .instructions p {
+    margin: 0;
+    text-align: left;
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: #ffffff;
+} */
+
+
+.drive-container button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 380px;
+    height: 60px;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 15px;
+    background: linear-gradient(90deg, #B66FC1 0%, #6B46C6 100%);
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    font-family: Poppins;
+}
+
+.drive-container a {
+    margin-top: 40px;
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.driver-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1160px;
+    margin: 50px auto;
+}
+
+@media (max-width: 768px) {
+    .driver-top {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.driver-title {
+    color: #02075D;
+    font-size: 50px;
+}
+
+.driver-icon {
+    color: #02075D;
+}
+
+
+.title span {
+    background: linear-gradient(90deg, #F36EB6 60.07%, #9747FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.driver-content {
+    display: flex;
+    flex-direction: column;
+    width: 1160px;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.driver-content-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .driver-content-top {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .driver-content {
+        width: 100%;
+    }
+}
+
+.driver-content-top-left {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.driver-content-top-left-name-container {
+    margin-top: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.driver-content-top-left-name {
+    display: flex;
+    color: #02075D;
+    align-items: center;
+    gap: 10px;
+}
+
+.driver-content-top-left-name-container-top {
+    color: #02075D;
+    font-weight: 800;
+}
+
+.driver-content-top-right-bot {
+    color: #02075D;
+    font-weight: 400;
+
+}
+
+.driver-content-top-left-img {
+    margin-right: 15px;
+}
+
+.hireRequestButton {
+    width: 190px;
+    height: 45px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: linear-gradient(270deg, #6B46C6 0%, #B66FC1 100%);
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+}
+
+.driver-content-top-right {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 30px;
+}

@@ -1,0 +1,78 @@
+.navbar {
+  padding: 2% 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+
+.logoContainer {
+  width: 111px;
+  display: flex;
+  justify-content: left;
+
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 75px;
+}
+
+.nav-links a {
+  color: #02075D;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+
+  /* Color change on hover */
+}
+
+.loginButton {
+  width: 111px;
+  height: 37px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: linear-gradient(270deg, #6B46C6 0%, #B66FC1 100%);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: #FFF;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+}
+
+button:hover {
+  background-color: #B66FC1;
+
+}
+@media (max-width: 768px) {
+  .navbar {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+  }
+  .logoContainer {
+  width: 111px;
+  display: flex;
+  justify-content: center;
+
+}
+}
