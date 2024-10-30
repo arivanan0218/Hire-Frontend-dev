@@ -9,7 +9,7 @@ export const DriverAdd = () => {
     const [formData, setFormData] = useState({
         fullName: '',
         nic: '',
-        phone: '',
+        email: '',
         seats: '',
         pickupPoint: '',
         droppingPoint: '',
@@ -68,7 +68,7 @@ export const DriverAdd = () => {
             setFormData({
                 fullName: '',
                 nic: '',
-                phone: '',
+                email: '',
                 seats: '',
                 pickupPoint: '',
                 droppingPoint: '',
@@ -104,9 +104,9 @@ export const DriverAdd = () => {
                     required
                 />
                 <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Phone No"
+                    type="text"
+                    name="email"
+                    placeholder="Email"
                     value={formData.phone}
                     onChange={handleChange}
                     required

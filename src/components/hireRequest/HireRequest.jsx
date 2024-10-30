@@ -2,29 +2,29 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import Logo from "../../assets/icons/MainLogo.png";
 import './HireRequest.css';
-import { useNavigate } from 'react-router-dom';
-
+import { useNavigate, useParams } from 'react-router-dom';
 
 export const HireRequest = () => {
+    const { id } = useParams(); // Extract ID from the URL
     const [formData, setFormData] = useState({
         fullName: '',
         nic: '',
         phone: '',
-        email: '',  // Added email field
+        email: '',
         seats: '',
         pickupPoint: '',
         droppingPoint: ''
     });
 
-    const districts = [
-        'Ampara', 'Anuradhapura', 'Badulla', 'Batticaloa', 'Colombo', 'Galle', 
-        'Gampaha', 'Hambantota', 'Jaffna', 'Kalutara', 'Kandy', 'Kegalle', 
-        'Kilinochchi', 'Kurunegala', 'Mannar', 'Matale', 'Matara', 'Moneragala', 
-        'Mullaitivu', 'Nuwara Eliya', 'Polonnaruwa', 'Puttalam', 'Ratnapura', 
-        'Trincomalee', 'Vavuniya'
-    ];
+    const navigate = useNavigate(); // Initialize the navigate function
 
-    const navigate = useNavigate();
+    const districts = [
+        "District 1",
+        "District 2",
+        "District 3",
+        "District 4"
+        // Add more districts as needed
+    ];
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -47,13 +47,12 @@ export const HireRequest = () => {
             to_email: formData.email, // Send OTP to the entered email
             to_name: formData.fullName,
             verification_code: verificationCode,
-            reply_to: formData.email
+            reply_to: formData.email,
         };
 
         try {
             // Validate email before sending
             if (formData.email && validateEmail(formData.email)) {
-                // Debug log to ensure the correct email is being used
                 console.log('Sending OTP to:', formData.email);
 
                 await emailjs.send(
@@ -63,7 +62,9 @@ export const HireRequest = () => {
                     '2rneYXJeCq7r8q2_R'       // Replace with your EmailJS User ID
                 );
                 console.log('OTP sent successfully to:', formData.email);
-                navigate('/otpVerification');
+
+                // Redirect to OTP verification page with driver ID
+                navigate(`/otpVerification/${id}`);
                 
             } else {
                 console.error("Invalid email address.");
@@ -109,8 +110,8 @@ export const HireRequest = () => {
                     required
                 />
                 <input
-                    type="email" // Change input type to email
-                    name="email"  // Add email field
+                    type="email"
+                    name="email"
                     placeholder="Email"
                     value={formData.email}
                     onChange={handleChange}

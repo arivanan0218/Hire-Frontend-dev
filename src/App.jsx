@@ -25,7 +25,7 @@ function App() {
                 <LandingPage />     
             } />
 
-          <Route path="/hire" element={
+          <Route path="/hire/:id" element={
             <PrivateRoute>
                 <HireRequest />
             </PrivateRoute>
@@ -49,7 +49,7 @@ function App() {
             </PrivateRoute>
            }
              />
-          <Route path="/otpVerification" element={
+          <Route path="/otpVerification/:id" element={
             <PrivateRoute>
                 <OtpVerification />
             </PrivateRoute>
