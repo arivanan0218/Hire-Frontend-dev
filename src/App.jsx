@@ -12,11 +12,13 @@ import OtpVerification from './components/otpVerification/OtpVerification'
 import DriverAdd from './components/driverAdd/DriverAdd'
 import VerifyHire from './components/verifyHire/VerifyHire'
 import PrivateRoute from './PrivateRoute'
+import ScrollToTop from './ScrollToTop'
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="app">
         <Header />
 

@@ -19,12 +19,33 @@ export const HireRequest = () => {
     const navigate = useNavigate(); // Initialize the navigate function
 
     const districts = [
-        "District 1",
-        "District 2",
-        "District 3",
-        "District 4"
-        // Add more districts as needed
+        "Ampara",
+        "Anuradhapura",
+        "Badulla",
+        "Batticaloa",
+        "Colombo",
+        "Galle",
+        "Gampaha",
+        "Hambantota",
+        "Jaffna",
+        "Kalutara",
+        "Kandy",
+        "Kegalle",
+        "Kilinochchi",
+        "Kurunegala",
+        "Mannar",
+        "Matale",
+        "Matara",
+        "Monaragala",
+        "Mullaitivu",
+        "Nuwara Eliya",
+        "Polonnaruwa",
+        "Puttalam",
+        "Ratnapura",
+        "Trincomalee",
+        "Vavuniya"
     ];
+    
 
     const handleChange = (e) => {
         const { name, value } = e.target;

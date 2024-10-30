@@ -80,7 +80,7 @@ export const OtpVerification = () => {
                     localStorage.removeItem("formData");
 
                     // Redirect to the specific hire route using the ID
-                    navigate(`/hire/${id}`); // Redirect to the hire page with the driver ID
+                    navigate(`/driver`); // Redirect to the hire page with the driver ID
                 } else {
                     setMessage("Failed to send details to the driver. Please try again.");
                 }
